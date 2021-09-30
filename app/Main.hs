@@ -16,11 +16,11 @@ type Family = [String]
 --   Die Menge aller Teilmenge der Potenzmenge ist die Potenzmenge der Potenzmenge.
 candidades = powerset $ powerset omega
 
--- | Dies sind die Ringe, die ich gefungen habe. Ich filtere alle familien aus candidates 
+-- | Dies sind die Ringe, die ich gefungen habe. Ich filtere alle Familien aus candidates 
 --   heraus, die checkRing erfüllen.
 rings    = filter checkRing candidades
 
--- | Analog zu rings nur eben algebren
+-- | Analog zu rings nur eben Algebren
 algebras = filter checkAlgebra candidades
 
 -- | Gibt True, wenn es sich bei der übergebenen Familie um einen Ring handelt.
@@ -35,7 +35,7 @@ checkAlgebra fam =    checkEmpty fam            -- Algebra-Axiom 1
                    && checkComplement omega fam -- Algebra-Axiom 2 
                    && checkUnion fam            -- Algebra-Axiom 3 
 
--- | Gibt True, wenn das leere Element enthalten ist.
+-- | Gibt True, wenn die leere Menge enthalten ist.
 checkEmpty :: Family -> Bool
 checkEmpty = elem empty
 
