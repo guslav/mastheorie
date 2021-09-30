@@ -1,6 +1,6 @@
 # Maßtheorie
 
-Der eigentlich Quellcode ist in der Datei app/Main.hs
+Der eigentliche Quellcode ist in der Datei app/Main.hs
 
 Passe die Zeile mit omega = "abc" an, wenn du willst, dass die Berechnung für ein größeres oder kleineres $ \Omega $ berechnet wird. Aber Achtung, du wirst große Werte nicht berechnen können. Der Code ist nicht für Performance geschrieben. Aufgrund der vielen Möglichkeiten einen Ring zu bauen wird das auch nur begrenzt sinnvoll sein. 
 

@@ -8,8 +8,8 @@ omega = "abc"
 empty = ""
 
 -- | Ich verwende Chars als Elemente. Ein String ist eine Menge von Chars. Eine Liste
---   von Chars ist damit eine Familie.
---   Family ist damit der Datentyp eines Rings (bzw. ALgebra)
+--   von Strings ist damit eine Familie.
+--   Family ist damit der Datentyp eines Rings (bzw. ALgebra).
 type Family = [String]
 
 -- | Ein Kandidat für einen Ring (bzw. Algebra) ist eine Teilmenge der Potenzmenge.
